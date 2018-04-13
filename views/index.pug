@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(method='post', enctype='multipart/form-data')
+    input(type='file', name='partFile')
+    input(type='submit', name='uploadPart', value='Upload Image')
